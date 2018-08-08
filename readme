@@ -9,13 +9,18 @@ express --view=pug express-study
 cd express-study
 npm install
 DEBUG=express-study:* npm start
-
+DEBUG=* npm start
+In Windows
+set DEBUG=* npm start
 
 npm install -g vue-cli  #설치하지 않은 경우
 vue init webpack frontend
 #프롬프트마다 필요한 설정을 합니다. 
 #vue-router 추가에 대한 질문은 꼭 Y를 해주세요
 cd frontend
+npm install
+
+After Git Clone
 npm install
 
 # refer
