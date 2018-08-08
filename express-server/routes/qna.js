@@ -9,16 +9,20 @@ var query = require('../const/query/qna.js');
 
 /* GET qna listing. */
 router.get('/', function(req, res, next) {
-	connection.connect();
-	
-	connection.query(query.selectAll,
+	//TODO: exception
+	if (typeof req.query.id !== 'undefined' && req.query.id) {
+		console.log(req.query.id);
+		var id = req.query.id;
+	} else {
+		console.log("id 검색하자아")
+		var id = '%'
+	}
+	connection.query(query.selectById, id,
 		function(err, rows, fields) {
 			if (err) throw err;
 			console.log(rows);
 			res.send(rows);
 		});
-	
-	connection.end();
 });
 
 module.exports = router;
