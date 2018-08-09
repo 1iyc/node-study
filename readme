@@ -23,6 +23,9 @@ npm install
 After Git Clone
 npm install
 
+In vue-front
+npm install --save axios
+
 # refer
 http://vuejs.kr/2017/02/05/express-with-vue/
 https://poiemaweb.com/nodejs-mysql
