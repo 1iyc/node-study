@@ -9,6 +9,7 @@ var qnaRouter = require('./routes/qna');
 
 var app = express();
 
+app.use(require('connect-history-api-fallback')());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
