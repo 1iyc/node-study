@@ -33,4 +33,7 @@ npm install -g pm2
 # refer
 http://vuejs.kr/2017/02/05/express-with-vue/
 https://poiemaweb.com/nodejs-mysql
+pm2
 https://massivcode.com/5
+login&logout
+http://webframeworks.kr/tutorials/expressjs/auth_log_in_out/
