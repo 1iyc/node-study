@@ -11,7 +11,7 @@ npm install
 DEBUG=express-study:* npm start
 DEBUG=* npm start
 In Windows
-set DEBUG=* npm start
+set DEBUG=* & npm start
 
 npm install -g vue-cli  #설치하지 않은 경우
 vue init webpack frontend
@@ -19,6 +19,7 @@ vue init webpack frontend
 #vue-router 추가에 대한 질문은 꼭 Y를 해주세요
 cd frontend
 npm install
+npm run dev
 
 After Git Clone
 npm install
@@ -26,6 +27,10 @@ npm install
 In vue-front
 npm install --save axios
 
+About pm2
+npm install -g pm2
+
 # refer
 http://vuejs.kr/2017/02/05/express-with-vue/
 https://poiemaweb.com/nodejs-mysql
+https://massivcode.com/5
