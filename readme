@@ -30,6 +30,9 @@ npm install --save axios
 About pm2
 npm install -g pm2
 
+server
+pm2 start node.json
+
 # refer
 http://vuejs.kr/2017/02/05/express-with-vue/
 https://poiemaweb.com/nodejs-mysql
