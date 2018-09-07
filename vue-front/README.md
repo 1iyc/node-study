@@ -30,3 +30,10 @@ npm test
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 Study Making Tree
+
+fields: [         {key: 'example', label: '예문', sortable: true},         {key: 'delete', label: '', thStyle: {width:'5%'}}       ],       example: null,       exampleClass: null,       currentPage: 1,       perPage: 10,       totalRows: 0,       pageOptions: [5, 10, 15, 20, 25, 30]
+
+
+@click.stop="delExample(row.item, row.index, $event.target)
+
+delExample (item, index, button) {
