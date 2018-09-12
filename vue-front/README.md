@@ -46,3 +46,5 @@ delExample (item, index, button) {
 @keyup.native.enter=
 
 Using method: this.method();
+
+SELECT D.id, D.words, COALESCE(D.parent_id, 0) parent_id FROM domain D
