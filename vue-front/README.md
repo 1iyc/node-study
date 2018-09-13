@@ -48,3 +48,14 @@ delExample (item, index, button) {
 Using method: this.method();
 
 SELECT D.id, D.words, COALESCE(D.parent_id, 0) parent_id FROM domain D
+
+data: [],
+      loadData: function(oriNode, resolve) {
+              var id = oriNode.data.id ? oriNode.data.id : 0;        
+	              setTimeout(() => {
+		                this.$http.get('/api/' + id).
+				          then((res) => {
+					              resolve(res.data);
+						                });
+								          }, 500)
+									        },
