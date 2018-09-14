@@ -59,3 +59,15 @@ data: [],
 						                });
 								          }, 500)
 									        },
+
+
+#custom scss
+
+change order for overriding
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to override variables do it here
+@import "variables";
+
