@@ -53,3 +53,6 @@ FROM ( SELECT @r := @id) AS vars, (SELECT * FROM domain WHERE id < @id) AS h
 WHERE @r is not null;
 
 http://devse.tistory.com/28
+
+When CSS dismissed
+z-index: auto
