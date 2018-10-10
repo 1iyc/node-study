@@ -33,7 +33,7 @@ export default {
           then((res) => {
             resolve(res.data);
           });
-          }, 500)
+        }, 500)
       },
       searchWord: null,
       searchClass: null,

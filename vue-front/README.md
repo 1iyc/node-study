@@ -71,3 +71,13 @@ change order for overriding
 // If you want to override variables do it here
 @import "variables";
 
+.btn-outline-primary:hover {
+    background-color: #eb384c;
+    border-color: #eb384c;
+    color: #fff;
+}
+
+
+
+var vm = this;
+in function use vm.~
