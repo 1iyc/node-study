@@ -81,3 +81,14 @@ change order for overriding
 
 var vm = this;
 in function use vm.~
+
+
+# history mode
+var express = require('express');
+var history = require('connect-history-api-fallback');
+
+var app = express();
+
+if (process.env.CHATBOT_ADMIN_PROD) { 
+  app.use(history());
+}
